@@ -1,0 +1,50 @@
+<header class="header" uk-sticky="top: 150;cls-active: uk-navbar-sticky;show-on-up: true;">
+  <div class="uk-container">
+    <nav class="uk-navbar uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left uk-flex-between uk-flex-nowrap">
+        <a href="/" class="uk-navbar-item uk-logo">
+          <span>Needle King</span>
+        </a>
+
+        <ul class="uk-navbar-nav uk-flex-between uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true;">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#portfolio">Наши работы</a></li>
+          <li><a href="#services">Наши услуги</a></li>
+          <li><a href="#advantage">Почему мы?</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div><!-- end uk-navbar-left -->
+
+      <div class="uk-navbar-right uk-flex-right">
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon="ratio: 1.5;" href="#mblCanvas" uk-toggle></a>
+
+        <a class="header__phone uk-navbar-item uk-visible@m" href="tel:+79688808058">+7 968 880-80-58</a>
+
+        <a class="uk-button green-btn uk-visible@l" href="#callback" uk-scroll>Заказать звонок</a>
+      </div>
+    </nav>
+  </div><!-- end container -->
+</header>
+
+
+<div id="mblCanvas" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+
+    <ul class="uk-nav uk-nav-primary">
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#portfolio">Наши работы</a></li>
+      <li><a href="#services">Наши услуги</a></li>
+      <li><a href="#advantage">Почему мы?</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+
+    <div class="uk-margin-medium">
+      <a class="header__phone" href="tel:+79688808058">+7 968 880-80-58</a>
+    </div>
+
+    <div class="uk-margin-medium">
+      <a class="uk-button green-btn" href="#callback" uk-scroll>Заказать звонок</a>
+    </div>
+
+  </div>
+</div>
