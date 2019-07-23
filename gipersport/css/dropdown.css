@@ -1,0 +1,220 @@
+/*! formstone v1.3.3 [dropdown.css] 2017-04-18 | GPL-3.0 License | formstone.it */
+
+.fs-dropdown {
+    position: relative;
+    z-index: 1;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    outline: 0;
+}
+.fs-dropdown .fs-scrollbar-track {
+    background: transparent;
+}
+.fs-dropdown *:focus {
+    outline: 0;
+}
+.fs-dropdown,
+.fs-dropdown *,
+.fs-dropdown:after,
+.fs-dropdown:before,
+.fs-dropdown:after,
+.fs-dropdown:before {
+    box-sizing: border-box;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important
+}
+.fs-dropdown-element {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent
+}
+.fs-dropdown-mobile .fs-dropdown-element {
+    z-index: 7
+}
+.fs-dropdown-mobile.fs-dropdown-multiple .fs-dropdown-element {
+    z-index: -1
+}
+.fs-dropdown-selected {
+    outline: 0;
+    height: 48px;
+    border: none;
+    padding: 10px;
+    padding-right: 30px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #2a2a2a;
+    border: 2px solid #f4f4f4;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fs-dropdown-selected:after {
+    font-family: "icomoon";
+    content: "\e91a";
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 15px;
+    display: block;
+    font-size: 11px;
+    color: #aaaaaa;
+}
+.fs-dropdown.fs-dropdown-focus .fs-dropdown-selected:after {
+    color: #fac206;
+}
+.fs-dropdown.fs-dropdown-focus .fs-dropdown-selected {
+    border-color: #fac206;
+}
+.fs-dropdown-options {
+    padding: 10px 0;
+    margin-top: 4px;
+    width: 100%;
+    max-height: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    border: 2px solid #f4f4f4;
+    display: none;
+    overflow: auto;
+    overflow-x: hidden;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.fs-dropdown-options::-webkit-scrollbar {
+    width: 5px;
+}
+.fs-dropdown-options::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.fs-dropdown-options::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 19px;
+}
+.fs-dropdown.fs-dropdown-bottom .fs-dropdown-options {
+    margin-top: 0;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: -2px;
+}
+.fs-dropdown-options.fs-scrollbar {
+    position: absolute
+}
+.fs-dropdown-group {
+    display: block;
+    font-size: 75%
+}
+.fs-dropdown-item {
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    color: #05a9f5;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: left;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+.fs-dropdown-item:hover, 
+.fs-dropdown-item:focus {
+    color: #fac206;
+}
+.fs-dropdown-item_placeholder {
+    display: none
+}
+.fs-dropdown-item_selected {
+    color: #fac206;
+}
+.fs-dropdown-item_selected:hover,
+.fs-dropdown-item_selected:focus {
+    color: #fac206;
+}
+.fs-dropdown-item_disabled {
+    cursor: default;
+    opacity: .5
+}
+.fs-dropdown-open {
+    z-index: 3
+}
+.fs-dropdown-open .fs-dropdown-options {
+    display: block
+}
+.fs-dropdown-open .fs-dropdown-selected {
+    z-index: 6
+}
+.fs-dropdown-cover.fs-dropdown-open .fs-dropdown-selected {
+    z-index: 4
+}
+.fs-dropdown-cover .fs-dropdown-options {
+    top: 0
+}
+.fs-dropdown-bottom .fs-dropdown-options {
+    top: auto;
+    bottom: 100%
+}
+.fs-dropdown-bottom.fs-dropdown-cover .fs-dropdown-options {
+    top: auto;
+    bottom: 0
+}
+.fs-dropdown-multiple .fs-dropdown-options {
+    width: 100%;
+    position: static;
+    display: block
+}
+.fs-dropdown-disabled {
+    opacity: .5
+}
+.fs-dropdown-disabled .fs-dropdown-selected {
+    cursor: default
+}
+.fs-dropdown-disabled .fs-dropdown-group,
+.fs-dropdown-disabled .fs-dropdown-item {
+    cursor: default
+}
+.fs-dropdown-options.fs-scrollbar {
+    overflow: hidden
+}
+.fs-dropdown-options.fs-scrollbar .fs-scrollbar-content {
+    max-height: 260px;
+    height: auto
+}
+.fs-dropdown-options.fs-scrollbar.fs-scrollbar-active .fs-scrollbar-content {
+    padding: 0
+}
+
+@media (min-width: 480px) {
+    .fs-dropdown-selected {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 960px) {
+
+}
