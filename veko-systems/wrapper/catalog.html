@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Каталог</title>
+
+  <!-- include head -->
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:url" content="">
+<meta property="og:type" content="Article">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="../images/ui/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/ui/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="../images/ui/favicon.ico"> -->
+
+<link rel="stylesheet" href="../libs/uikit/css/uikit.min.css">
+<link rel="stylesheet" href="../libs/uikit/css/components/slidenav.css">
+<link rel="stylesheet" href="../libs/slick/slick.css">
+<link rel="stylesheet" href="../css/style.css">
+</head> 
+<body>  
+  <!-- Шапка -->
+  <div class="top-banner uk-visible-large" id="topBanner">
+  <div class="uk-container uk-container-large">
+    <div class="top-banner__content">
+      <div class="uk-grid">
+        <div class="uk-width-medium-7-12">
+          <div class="uk-h2">Посетите наш стенд 19-21 сентября 2017 года</div>
+        </div><!-- end column -->
+        <div class="uk-width-medium-5-12 uk-vertical-align">
+          <div class="uk-vertical-align-middle">
+            <p>Москва, Крокус Экспо, 8 Международная выставка</p>
+          </div>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+      <button class="close-btn" title="Закрыть" data-uk-toggle="{target:'#topBanner'}">
+        <span class="icon icon-close"></span>
+      </button>
+    </div><!-- end top-banner__content -->
+  </div><!-- end container -->  
+</div><!-- end top-banner -->
+
+<header class="header">
+  <div class="top-header">
+    <div class="uk-container uk-container-large">
+      <div class="uk-flex uk-flex-space-between">
+        <div class="top-header__column">
+          <!-- Бургер -->
+          <a class="burger-btn uk-hidden-xlarge" href="#mblTopHeader" data-uk-offcanvas>
+            <span class="icon icon-menu"></span>
+          </a>
+          
+          <!-- Открытие поиска на моб -->
+          <div class="open-mbl-search uk-visible-xsmall" data-uk-toggle="{target:'#headerSearch', cls:'open'}">
+            <span class="icon icon-loupe"></span>
+            Поиск
+          </div>
+
+          <nav class="top-nav uk-visible-xlarge">
+            <ul>
+              <li class="top-nav__parent" data-uk-dropdown="{mode:'hover', delay: 0, remaintime: 100, preventflip: true}">
+                <a href="">О компании</a>
+                <div class="uk-dropdown">
+                  <ul class="submenu-list">
+                    <li><a href="">Менеджеры</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">Вакансии</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Производство</a></li>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Документация</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>  
+          </nav>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column">
+          <form id="headerSearch" class="search-form" action="">
+            <div class="close-search uk-visible-xsmall"><span class="icon icon-close"></span></div>
+            <div class="search-form__input">
+              <input type="text" placeholder="Поиск">
+              <button><span class="icon icon-loupe"></span></button>
+            </div>
+          </form>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column">
+          <a class="elem-icon" href="tel:+74955044078">
+            <span class="icon icon-phone"></span>
+            +7 495 504-40-78
+          </a>
+          <a class="top-header__callback" href="#callBack" data-uk-modal>Заказать звонок</a>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column uk-hidden-small">
+          <a class="elem-icon top-header__lang" href="tel:+74955044078" title="Изменить язык">
+            <span class="icon icon-flag"></span>
+            Eng
+          </a>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column uk-hidden-small">
+          <a class="btn yellow-btn" href="#calcForm" data-uk-modal="">Расчет стоимости</a>
+        </div><!-- end top-header__column -->
+      </div><!-- end uk-flex -->
+    </div><!-- end container -->
+  </div><!-- end top-header -->
+  <div class="middle_header">
+    <div class="uk-container">
+      <div class="uk-grid">
+        <div class="uk-width-1-2 uk-width-medium-2-12">
+          <a class="logo" href="">
+            <img src="../images/ui/logo.png" alt="Логотип">
+          </a>
+        </div><!-- end column -->
+        <div class="uk-width-1-2 uk-width-medium-10-12">
+          <nav class="main-nav uk-hidden-small">
+            <ul class="uk-flex uk-flex-middle uk-flex-space-between">
+              <li><a href="">Фронтальные стеллажи</a></li>
+              <li><a href="">Глубинные стелажи</a></li>
+              <li><a href="">Полочные стеллажи</a></li>
+              <li><a href="">Консольные стеллажи</a></li>
+              <li><a href="">Гравитационные стеллажи</a></li>
+              <li><a href="">Мезонинные конструкции</a></li>
+            </ul>
+          </nav>
+
+          <!-- Вызов каталога на моб -->
+          <a class="mbl-catalog-btn uk-visible-small" href="#mblCatalog" data-uk-offcanvas>
+            Каталог
+            <span class="icon icon-chevron-right"></span>
+          </a>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end container -->  
+  </div><!-- end middle_header -->
+</header>
+
+<div id="mblTopHeader" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <nav class="offcanvas-menu">
+      <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+        <li class="uk-parent">
+          <a href="#">О компании</a>
+
+          <ul class="uk-nav-sub">
+            <li><a href="">Менеджеры</a></li>
+            <li><a href="">Реквизиты</a></li>
+            <li><a href="">Вакансии</a></li>
+          </ul>
+        </li>
+        <li><a href="">Производство</a></li>
+        <li><a href="">Услуги</a></li>
+        <li><a href="">Документация</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>  
+    </nav>
+    
+    <ul class="uk-list">
+      <li>
+        Сменить язык: 
+        <a class="elem-icon" href="tel:+74955044078" title="Изменить язык">
+          <span class="icon icon-flag"></span>
+          Eng
+        </a>
+      </li>
+      <li>
+        <a class="btn yellow-btn" href="#calcForm" data-uk-modal="">Расчет стоимости</a>
+      </li>
+    </ul>
+  </div><!-- end uk-offcanvas-bar -->
+</div><!-- end uk-offcanvas -->
+
+<div id="mblCatalog" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <nav class="offcanvas-menu">
+      <ul>
+        <li><a href="">Фронтальные стеллажи</a></li>
+        <li><a href="">Глубинные стелажи</a></li>
+        <li><a href="">Полочные стеллажи</a></li>
+        <li><a href="">Консольные стеллажи</a></li>
+        <li><a href="">Гравитационные стеллажи</a></li>
+        <li><a href="">Мезонинные конструкции</a></li>
+      </ul>  
+    </nav>
+  </div><!-- end uk-offcanvas-bar -->
+</div><!-- end uk-offcanvas -->
+  
+  
+
+<div class="main-title">
+  <div class="uk-container">
+    <ul class="uk-breadcrumb">
+  <li><a href="">Главная</a></li>
+  <li class="uk-active"><span>Проекты</span></li>
+</ul>
+
+    <h1 class="uk-h2">Стеллажи</h1>
+  </div><!-- end container -->
+</div><!-- end main-title -->
+
+<section class="grey-section">
+  <div class="uk-container">
+    
+    <!-- Каталог -->
+    <!-- Картинки в каталоге резать на 500x500 -->
+<div class="catalog">
+  <ul class="uk-grid uk-grid-medium uk-grid-width-medium-1-2">
+    <li>
+      <a href="" class="catalog__item equalHeight" data-mh="catalog-item">
+        <div class="catalog__item_img">
+          <img class="img-cover" src="../images/media/catalog-01.jpg" alt="Фронтальные стеллажи">
+        </div>
+        <div class="catalog__item_desc">
+          <h4>Фронтальные стеллажи</h4>
+          
+          <div class="catalog__item_text">
+            <p>Фронтальные стеллажи — это универсальные системы, предназначенные для многоярусного складирования широкой номенклатуры грузов на паллетах и в контейнерах номенклатуры грузов на паллетах и контейнерах...</p>
+          </div>
+        </div><!-- end catalog__item_desc -->
+      </a><!-- end catalog__item -->
+    </li>
+    <li>
+      <a href="" class="catalog__item equalHeight" data-mh="catalog-item">
+        <div class="catalog__item_img">
+          <img class="img-cover" src="../images/media/catalog-02.jpg" alt="Глубинные стеллажи">
+        </div>
+        <div class="catalog__item_desc">
+          <h4>Глубинные стеллажи</h4>
+          
+          <div class="catalog__item_text">
+            <p>Глубинные стеллажи — многоярусные системы хранения, обеспечивающие максимально эффективное заполнение складских площадей (50—80% объема склада) однородными...</p>
+          </div>
+        </div><!-- end catalog__item_desc -->
+      </a><!-- end catalog__item -->
+    </li>
+    <li>
+      <a href="" class="catalog__item equalHeight" data-mh="catalog-item">
+        <div class="catalog__item_img">
+          <img class="img-cover" src="../images/media/catalog-03.jpg" alt="Консольные стеллажи">
+        </div>
+        <div class="catalog__item_desc">
+          <h4>Консольные стеллажи</h4>
+          
+          <div class="catalog__item_text">
+            <p>Консольные стеллажи разработаны для хранения крупногабаритных, длинномерных и других нестандартных грузов. Они могут быть изготовлены любой длины с помощью дополнительных...</p>
+          </div>
+        </div><!-- end catalog__item_desc -->
+      </a><!-- end catalog__item -->
+    </li>
+    <li>
+      <a href="" class="catalog__item equalHeight" data-mh="catalog-item">
+        <div class="catalog__item_img">
+          <img class="img-cover" src="../images/media/catalog-04.jpg" alt="Мезонинные стеллажи">
+        </div>
+        <div class="catalog__item_desc">
+          <h4>Мезонинные стеллажи</h4>
+          
+          <div class="catalog__item_text">
+            <p>Мезонины представляют собой стеллажные металлоконструкции для размещения товаров на одном и более этажей склада. Благодаря этому, данный вид стеллажей...</p>
+          </div>
+        </div><!-- end catalog__item_desc -->
+      </a><!-- end catalog__item -->
+    </li>
+    <li>
+      <a href="" class="catalog__item equalHeight" data-mh="catalog-item">
+        <div class="catalog__item_img">
+          <img class="img-cover" src="../images/media/catalog-05.jpg" alt="Гравитационные стеллажи">
+        </div>
+        <div class="catalog__item_desc">
+          <h4>Гравитационные стеллажи</h4>
+          
+          <div class="catalog__item_text">
+            <p>Гравитационные стеллажи — это стеллажное оборудование, отличающееся динамической конструкцией и предназначенное для хранения грузов. Основан принцип построения...</p>
+          </div>
+        </div><!-- end catalog__item_desc -->
+      </a><!-- end catalog__item -->
+    </li>
+    <li>
+      <a href="" class="catalog__item equalHeight" data-mh="catalog-item">
+        <div class="catalog__item_img">
+          <img class="img-cover" src="../images/media/catalog-06.jpg" alt="Гравитационные стеллажи">
+        </div>
+        <div class="catalog__item_desc">
+          <h4>Полочные стеллажи</h4>
+          
+          <div class="catalog__item_text">
+            <p>Потолочные стеллажи на основе паллетных стеллажей, предназначенных для размещения грузов средней и высокой степени тяжести в складских или промышленных помещениях...</p>
+          </div>
+        </div><!-- end catalog__item_desc -->
+      </a><!-- end catalog__item -->
+    </li>
+  </ul>
+</div><!-- end catalog-->
+  </div><!-- end container -->
+</section>
+
+<!-- Блок новостей -->
+<section class="main-news-section">
+  <div class="uk-container">
+    <h2>Новости и публикации</h2>
+
+    <div class="main-news">
+      <a class="float-more-link" href="">Смотреть все</a>
+
+      <div class="uk-grid uk-grid-collapse">
+        <div class="uk-width-medium-1-2">
+          <div class="main-news__item large">
+            <div class="date">26 января 2018</div>
+            <a class="uk-h4">В чем особенности гравитационных стеллажей</a>
+
+            <p>Несмотря на то, что основное предназначение любых стеллажей связано с обустройством складских помещений и максимально плотным хранением каких-либо грузов, гравитационные конструкции характеризуются едва ли не самой лучшей эффективностью в этом направлении.</p>
+          </div><!-- end main-news__item -->
+        </div><!-- end column -->
+        <div class="uk-width-medium-1-2">
+          <div class="main-news__item">
+            <div class="date">12 января 2018</div>
+            <a class="uk-h4">Приходите на наш стенд на выставке «CeMAT Russia 2017»!</a>
+          </div><!-- end main-news__item -->
+          <div class="main-news__item">
+            <div class="date">21 декабря 2017</div>
+            <a class="uk-h4">Тележки для доставки грузов: виды и особенности</a>
+          </div><!-- end main-news__item -->
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end main-news -->
+  </div><!-- end container -->
+</section>
+
+
+
+  <!-- Футер -->
+  <footer class="footer">
+  <div class="uk-container">
+    <div class="uk-grid">
+      <div class="uk-width-small-1-2 uk-width-medium-4-12">
+        <div class="footer__column">
+          <div class="footer__title">Компания</div>
+
+          <ul class="footer__menu small">
+            <li><a href="">О компании</a></li>
+            <li><a href="">Производство</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Документация</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Публикации</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div><!-- end footer__column -->
+      </div><!-- end column -->
+      <div class="uk-width-small-1-2 uk-width-medium-5-12">
+        <div class="footer__column">
+          <div class="footer__title">Продукция</div>
+
+          <ul class="footer__menu">
+            <li><a href="">Фронтальные стеллажи</a></li>
+            <li><a href="">Глубинные стелажи</a></li>
+            <li><a href="">Полочные стеллажи</a></li>
+            <li><a href="">Мезонинные конструкции</a></li>
+            <li><a href="">Гравитационные стеллажи</a></li>
+            <li><a href="">Консольные стеллажи</a></li>
+          </ul>
+        </div><!-- end footer__column -->
+      </div><!-- end column -->
+      <div class="uk-width-medium-3-12">
+        <div class="footer__column">
+          <div class="footer__title">Контакты</div>
+          
+          <div class="footer__contacts">
+            <p><a href="tel:+74955044078">+7 495 504-40-78</a></p>
+            <p>109316, г. Москва, Волгоградский пр-т, д.47, офис 421</p>
+            <p>Пн—Пт с 9.00 до 18.00</p>
+            <p><a href="mailto:info@vekosystems.ru">info@vekosystems.ru</a></p>
+          </div>
+        </div><!-- end footer__column -->
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <div class="copyright">
+      <div class="uk-grid">
+        <div class="uk-width-medium-8-12 uk-width-large-9-12">
+          <p class="copyright__text">VekoSystems — залог эффективности вашего склада</p>
+
+          <p>Разработка и продвижение — <a class="ae-logo" href="">«ЭВРИКА»</a></p>
+        </div><!-- end column -->
+        <div class="uk-width-medium-4-12 uk-width-large-3-12 uk-hidden-small">
+          <form class="search-form" action="">
+            <div class="search-form__input">
+              <input type="text" placeholder="Поиск">
+              <button><span class="icon icon-loupe"></span></button>
+            </div>
+          </form>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end copyright -->
+  </div><!-- end container -->
+</footer>
+
+<!-- Расчет стоимости -->
+<div id="calcForm" class="uk-modal modal">
+  <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+    <a class="uk-modal-close close-btn">
+      <span class="icon icon-close"></span>
+    </a>
+    
+    <div class="modal__content">
+      <form class="form" action="">
+        <div class="uk-h2">Расчет стоимости</div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Ваше имя">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <input class="phoneInput" type="text" placeholder="Номер телефона">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <button class="btn yellow-btn" type="submit">Расчитать стоимость</button>
+          
+          <!-- После подключения удалить этот текст -->
+          <p>
+            <a href="#successMessage" data-uk-modal>Ссылка на успешную отправку</a>
+          </p>
+        </div><!-- end form-row -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Обратный звонок -->
+<div id="callBack" class="uk-modal modal">
+  <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+    <a class="uk-modal-close close-btn">
+      <span class="icon icon-close"></span>
+    </a>
+    
+    <div class="modal__content">
+      <form class="form" action="">
+        <div class="uk-h2">Заказать звонок</div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Ваше имя">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <input class="phoneInput" type="text" placeholder="Номер телефона">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <button class="btn yellow-btn" type="submit">Перезвоните</button>
+        </div><!-- end form-row -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Успешная отправка -->
+<div id="successMessage" class="uk-modal modal">
+  <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+    <a class="uk-modal-close close-btn">
+      <span class="icon icon-close"></span>
+    </a>
+    
+    <div class="modal__content">
+      <div class="success-message">
+        <div class="uk-h2">Спасибо!<br>Ваше сообщение отправлено</div>
+        <span class="icon icon-message"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Скрипты -->
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../libs/uikit/js/uikit.min.js" type="text/javascript"></script>
+<script src="../libs/uikit/js/components/lightbox.min.js" type="text/javascript"></script>
+<script src="../js/jquery.matchHeight-min.js" type="text/javascript"></script>
+<script src="../libs/slick/slick.min.js" type="text/javascript"></script>
+<script src="../js/ofi.min.js" type="text/javascript"></script>
+<script src="../js/jquery.sticky.js" type="text/javascript"></script>
+<script src="../js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="../js/script.js" type="text/javascript"></script>
+
+  <!-- Дополнительные скрипты для страниц -->
+  
+
+</body>
+</html>

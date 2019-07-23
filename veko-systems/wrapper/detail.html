@@ -1,0 +1,781 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Детальная</title>
+
+  <!-- include head -->
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:url" content="">
+<meta property="og:type" content="Article">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="../images/ui/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/ui/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="../images/ui/favicon.ico"> -->
+
+<link rel="stylesheet" href="../libs/uikit/css/uikit.min.css">
+<link rel="stylesheet" href="../libs/uikit/css/components/slidenav.css">
+<link rel="stylesheet" href="../libs/slick/slick.css">
+<link rel="stylesheet" href="../css/style.css">
+</head> 
+<body>  
+  <!-- Шапка -->
+  <div class="top-banner uk-visible-large" id="topBanner">
+  <div class="uk-container uk-container-large">
+    <div class="top-banner__content">
+      <div class="uk-grid">
+        <div class="uk-width-medium-7-12">
+          <div class="uk-h2">Посетите наш стенд 19-21 сентября 2017 года</div>
+        </div><!-- end column -->
+        <div class="uk-width-medium-5-12 uk-vertical-align">
+          <div class="uk-vertical-align-middle">
+            <p>Москва, Крокус Экспо, 8 Международная выставка</p>
+          </div>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+      <button class="close-btn" title="Закрыть" data-uk-toggle="{target:'#topBanner'}">
+        <span class="icon icon-close"></span>
+      </button>
+    </div><!-- end top-banner__content -->
+  </div><!-- end container -->  
+</div><!-- end top-banner -->
+
+<header class="header">
+  <div class="top-header">
+    <div class="uk-container uk-container-large">
+      <div class="uk-flex uk-flex-space-between">
+        <div class="top-header__column">
+          <!-- Бургер -->
+          <a class="burger-btn uk-hidden-xlarge" href="#mblTopHeader" data-uk-offcanvas>
+            <span class="icon icon-menu"></span>
+          </a>
+          
+          <!-- Открытие поиска на моб -->
+          <div class="open-mbl-search uk-visible-xsmall" data-uk-toggle="{target:'#headerSearch', cls:'open'}">
+            <span class="icon icon-loupe"></span>
+            Поиск
+          </div>
+
+          <nav class="top-nav uk-visible-xlarge">
+            <ul>
+              <li class="top-nav__parent" data-uk-dropdown="{mode:'hover', delay: 0, remaintime: 100, preventflip: true}">
+                <a href="">О компании</a>
+                <div class="uk-dropdown">
+                  <ul class="submenu-list">
+                    <li><a href="">Менеджеры</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">Вакансии</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Производство</a></li>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Документация</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>  
+          </nav>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column">
+          <form id="headerSearch" class="search-form" action="">
+            <div class="close-search uk-visible-xsmall"><span class="icon icon-close"></span></div>
+            <div class="search-form__input">
+              <input type="text" placeholder="Поиск">
+              <button><span class="icon icon-loupe"></span></button>
+            </div>
+          </form>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column">
+          <a class="elem-icon" href="tel:+74955044078">
+            <span class="icon icon-phone"></span>
+            +7 495 504-40-78
+          </a>
+          <a class="top-header__callback" href="#callBack" data-uk-modal>Заказать звонок</a>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column uk-hidden-small">
+          <a class="elem-icon top-header__lang" href="tel:+74955044078" title="Изменить язык">
+            <span class="icon icon-flag"></span>
+            Eng
+          </a>
+        </div><!-- end top-header__column -->
+        <div class="top-header__column uk-hidden-small">
+          <a class="btn yellow-btn" href="#calcForm" data-uk-modal="">Расчет стоимости</a>
+        </div><!-- end top-header__column -->
+      </div><!-- end uk-flex -->
+    </div><!-- end container -->
+  </div><!-- end top-header -->
+  <div class="middle_header">
+    <div class="uk-container">
+      <div class="uk-grid">
+        <div class="uk-width-1-2 uk-width-medium-2-12">
+          <a class="logo" href="">
+            <img src="../images/ui/logo.png" alt="Логотип">
+          </a>
+        </div><!-- end column -->
+        <div class="uk-width-1-2 uk-width-medium-10-12">
+          <nav class="main-nav uk-hidden-small">
+            <ul class="uk-flex uk-flex-middle uk-flex-space-between">
+              <li><a href="">Фронтальные стеллажи</a></li>
+              <li><a href="">Глубинные стелажи</a></li>
+              <li><a href="">Полочные стеллажи</a></li>
+              <li><a href="">Консольные стеллажи</a></li>
+              <li><a href="">Гравитационные стеллажи</a></li>
+              <li><a href="">Мезонинные конструкции</a></li>
+            </ul>
+          </nav>
+
+          <!-- Вызов каталога на моб -->
+          <a class="mbl-catalog-btn uk-visible-small" href="#mblCatalog" data-uk-offcanvas>
+            Каталог
+            <span class="icon icon-chevron-right"></span>
+          </a>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end container -->  
+  </div><!-- end middle_header -->
+</header>
+
+<div id="mblTopHeader" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <nav class="offcanvas-menu">
+      <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+        <li class="uk-parent">
+          <a href="#">О компании</a>
+
+          <ul class="uk-nav-sub">
+            <li><a href="">Менеджеры</a></li>
+            <li><a href="">Реквизиты</a></li>
+            <li><a href="">Вакансии</a></li>
+          </ul>
+        </li>
+        <li><a href="">Производство</a></li>
+        <li><a href="">Услуги</a></li>
+        <li><a href="">Документация</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>  
+    </nav>
+    
+    <ul class="uk-list">
+      <li>
+        Сменить язык: 
+        <a class="elem-icon" href="tel:+74955044078" title="Изменить язык">
+          <span class="icon icon-flag"></span>
+          Eng
+        </a>
+      </li>
+      <li>
+        <a class="btn yellow-btn" href="#calcForm" data-uk-modal="">Расчет стоимости</a>
+      </li>
+    </ul>
+  </div><!-- end uk-offcanvas-bar -->
+</div><!-- end uk-offcanvas -->
+
+<div id="mblCatalog" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <nav class="offcanvas-menu">
+      <ul>
+        <li><a href="">Фронтальные стеллажи</a></li>
+        <li><a href="">Глубинные стелажи</a></li>
+        <li><a href="">Полочные стеллажи</a></li>
+        <li><a href="">Консольные стеллажи</a></li>
+        <li><a href="">Гравитационные стеллажи</a></li>
+        <li><a href="">Мезонинные конструкции</a></li>
+      </ul>  
+    </nav>
+  </div><!-- end uk-offcanvas-bar -->
+</div><!-- end uk-offcanvas -->
+  
+  
+
+<div class="main-title">
+  <div class="uk-container">
+    <ul class="uk-breadcrumb">
+  <li><a href="">Главная</a></li>
+  <li class="uk-active"><span>Проекты</span></li>
+</ul>
+
+    <h1 class="uk-h2">Фронтальные стеллажи</h1>
+  </div><!-- end container -->
+</div><!-- end main-title -->
+
+<!-- Слайдер -->
+<section class="triple-slider-section">
+  <div class="uk-container">
+    <div class="triple-slider">
+      <div class="uk-grid uk-grid-medium">
+        <div class="uk-width-medium-7-10 uk-width-large-3-4">
+          <div class="slider-block">
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+          </div><!-- end slider-block -->
+        </div><!-- end column -->
+        <div class="uk-width-medium-3-10 uk-width-large-1-4">
+          <div class="slider-block-nav">
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+            <div class="slide-item">
+              <div class="img-center">
+                <img class="img-cover" src="../images/media/triple-slider-01.jpg" alt="Картинка">  
+              </div>
+            </div><!-- end slide-item -->
+          </div><!-- end slider-block-nav -->
+        </div><!-- end column -->
+      </div><!-- end grid -->
+      
+    </div><!-- end triple-slider -->
+  </div><!-- end container -->
+</section>
+
+<section class="indent-section content-text">
+  <div class="uk-container">
+    <p>Фронтальные стеллажи представляют собой складское оборудование с многоярусной конструкцией, ориентированное на хранение грузов на поддонах и контейнерах различных типов. Для стеллажей этого типа характерно наличие следующих преимуществ:</p>
+
+    <ul>
+      <li>Легкий и простой доступ к хранимому товару в любой момент времени.</li>
+      <li>Возможность регулировать количество ярусов и длину ряда без вмешательства в основную конструкцию.</li>
+      <li>Простой и быстрый монтаж/демонтаж стеллажей.</li>
+      <li>Эффективный контроль складских запасов.</li>
+      <li>Высокая грузоподъемность всей конструкции.</li>
+    </ul>
+
+    <p>В зависимости от конфигурации складского помещения и способа погрузки, фронтальные стеллажи устанавливают следующими способами:</p>
+
+    <ul>
+      <li>в один ряд;</li>
+      <li>сдвоенными рядами;</li>
+      <li>способом двойной глубины, что значительно увеличивает полезную площадь.</li>
+    </ul>
+  </div><!-- end container -->
+</section>
+
+<section class="grey-section content-text">
+  <div class="uk-container">
+    <h3>Конструктивные особенности складских стеллажей</h3>
+
+    <p>За счет возможности регулирования высоты и ширины балки появляется возможность эксплуатировать фронтальные стеллажи для следующих целей:</p>
+
+    <ul>
+      <li>Хранение груза в бочках, ящиках, боксах и другой таре с плоским дном.</li>
+      <li>Хранение груза на паллете с возможностью использования погрузчика.</li>
+      <li>Хранение поштучного товара при дополнительной комплектации горизонтальными полками.</li>
+    </ul>
+    
+    <p>Для предотвращения колебаний и предупреждения падения стеллажа, он фиксируется к полу специальными элементами. Наличие незначительных перепадов по высоте можно компенсировать при помощи специальной регулировочной пластины.</p>
+
+    <p>Цена на фронтальные стеллажи Vekosystems выгодно отличается от альтернативных предложений на рынке Москвы. Мы предлагаем купить только качественные изделия, которые полностью соответствуют требованиям заказчика и будут эффективно решать поставленные задачи. </p>
+
+    <div class="white-panel">
+      <h4>Технические характеристики</h4>
+      
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>Тип профиля стоек</strong></td>
+            <td>Прокатный</td>
+          </tr>
+          <tr>
+            <td><strong>Марки стали</strong></td>
+            <td>Сталь 3, S355MC</td>
+          </tr>
+          <tr>
+            <td><strong>Ширина профиля стоек</strong></td>
+            <td>80, 100, 120, 140 мм</td>
+          </tr>
+          <tr>
+            <td><strong>Покрытие</strong></td>
+            <td>Полимерное, оцинкованное</td>
+          </tr>
+          <tr>
+            <td><strong>Высота рам</strong></td>
+            <td>До 14 метров</td>
+          </tr>
+          <tr>
+            <td><strong>Шаг переустановки ложемента</strong></td>
+            <td>25 мм</td>
+          </tr>
+          <tr>
+            <td><strong>Крепление балки к раме</strong></td>
+            <td>Зацепное, с фиксатором</td>
+          </tr>
+          <tr>
+            <td><strong>Допустимая нагрузка на секцию</strong></td>
+            <td>до 30000 кг (зависит от профиля стойки и высоты установки первого яруса балок)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- end white-panel -->
+  </div><!-- end container -->
+</section>
+
+<section class="indent-section content-text">
+  <div class="uk-container">
+    <h3>Элементы фронтальных складских стеллажей</h3>
+    
+    <div class="uk-grid">
+      <div class="uk-width-medium-6-10">
+        <img src="../images/media/detail-01.jpg" alt="Картинка">
+      </div><!-- end column -->
+      <div class="uk-width-medium-4-10">
+        <ol>
+          <li>Рама</li>
+          <li>Балка</li>
+          <li>Коннектор</li>
+          <li>Соединитель спаренных рядов</li>
+          <li>Опора</li>
+          <li>Анкерный болт</li>
+          <li>Регулировочная пластина</li>
+          <li>Фронтальное защитное ограждение стойки</li>
+          <li>Угловое защитное ограждение стойки</li>
+          <li>Боковое защитное ограждение стойки</li>
+          <li>Стойка</li>
+          <li>Раскос горизонтальный</li>
+          <li>Раскос диагональный</li>
+          <li>Поперечная балка с гуськами</li>
+        </ol>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-2">
+        <p>Конструкция фронтального стеллажа включает следующие основные элементы:</p>
+
+        <ul>
+          <li>рама;</li>
+          <li>балки;</li>
+          <li>раскосы.</li>
+        </ul>
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-2">
+        <p>Дополнительными элементами фронтальных стеллажей являются:</p>
+
+        <ul>
+          <li>подпятники;</li>
+          <li>коннекторы;</li>
+          <li>защитные ограждения;</li>
+          <li>полки горизонтальные.</li>
+        </ul>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-2">
+        <p>Для изготовления рамы используют две металлические стойки, которые соединяют между собой диагональными и горизонтальными раскосами. Все конструктивные элементы рамы изготавливают из оцинкованной стали или стали с полимерным покрытием сортов сталь 3 и S355MC. Наличие перфорации на стойках позволяет максимально точно подобрать высоту яруса, что экономит свободное пространство.</p>
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-2">
+        <img style="margin-top: 40px;" src="../images/media/detail-02.jpg" alt="Картинка">
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <p>Горизонтальный конструктивный элемент стеллажа, предназначенный для размещения полок или поддонов, называют балкой. Она крепится к стойкам при помощи специальных коннекторов и формирует ярус. Балки характеризуются высокой несущей способностью и длительным сроком службы.</p>
+
+    <p>На поверхность всех конструктивных элементов фасадного стеллажа наносится полимерное покрытие методом порошковой окраски, что придает изделиям дополнительную устойчивость к коррозии и царапинам.</p>
+
+    <hr>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-2">
+        <p>Раскосы - П-образный профиль. Марка стали – Сталь 3. В зависимости от места установки на раме различают диагональные и горизонтальные. </p>
+
+        <img src="../images/media/detail-03.jpg" alt="Картинка">
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-2">
+        <p>Раскосы обеспечивают фиксацию стоек и жесткость всей конструкции.</p>
+
+        <img style="margin-top: 40px;" src="../images/media/detail-04.jpg" alt="Картинка">
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <p>Балки изготавливаются следующих типоразмеров:</p>
+    
+    <div class="uk-grid">
+      <div class="uk-width-medium-6-10">
+        <table>
+          <thead>
+            <tr>
+              <th>Ширина</th>
+              <th colspan="5">Высота</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td align="center"><strong>70 мм</strong></td>
+              <td align="center"><strong>90 мм</strong></td>
+              <td align="center"><strong>110 мм</strong></td>
+              <td align="center"><strong>130 мм</strong></td>
+              <td align="center"><strong>150 мм</strong></td>
+            </tr>
+            <tr>
+              <td align="center"><strong>40 мм</strong></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+            </tr>
+            <tr>
+              <td align="center"><strong>50 мм</strong></td>
+              <td></td>
+              <td></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+              <td><p style="text-align: center;"><img src="../images/ui/blue-dot.svg" alt="Точка"></p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- end column -->
+      <div class="uk-width-medium-4-10">
+        <p style="text-align: center;">
+          <img src="../images/media/detail-05.jpg" alt="Картинка">
+        </p>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+    
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-2">
+        <p>Балка СС-типа используется при классическом хранении груза на поддонах. Длина балки варьируется в зависимости от:</p>
+
+        <ul>
+          <li>типа поддона (EURO, FIN);</li>
+          <li>количества поддонов, располагаемых на паре балок;</li>
+          <li>предполагаемых нагрузок.</li>
+        </ul>
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-2">
+        <p style="text-align: center;">
+          <img src="../images/media/detail-06.jpg" alt="Картинка">
+        </p>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <p>Горизонтальные балки соединяются с вертикальными рамами с помощью зацепов, расположенных на коннекторах с обеих сторон балки. Зацепные коннекторы входят в конические отверстия вертикальных стоек без зазоров, гарантируя устойчивость и прочность стеллажной системы. Количество зацепов варьируется в зависимости от предполагаемых нагрузок на пару балок.</p>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-2">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th colspan="2">Тип коннектора</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td align="center"><strong>с 4-мя зацепами</strong></td>
+              <td align="center"><strong>с 7-ю зацепами</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Высота</strong></td>
+              <td align="center">200 мм</td>
+              <td align="center">350 мм</td>
+            </tr>
+            <tr>
+              <td><strong>Тип крепления</strong></td>
+              <td align="center">левый/правый</td>
+              <td align="center">левый/правый</td>
+            </tr>
+            <tr>
+              <td><strong>Размер зацепа</strong></td>
+              <td align="center">20 мм</td>
+              <td align="center">20 мм</td>
+            </tr>
+            <tr>
+              <td><strong>Регулировка по высоте</strong></td>
+              <td align="center">50 мм</td>
+              <td align="center">50 мм</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-2">
+        <p style="text-align: center;">
+          <img style="margin-top: 40px;" src="../images/media/detail-07.jpg" alt="Картинка">
+        </p>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <h3>Дополнительные элементы</h3>
+
+    <h4>Защитные элементы</h4>
+
+    <p>Наша компания предлагает фронтальное и угловое защитное ограждение стоек для снижения риска повреждения стеллажей и грузов время работы погрузочной техники</p>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-3">
+        <h5>Угловое защитное ограждение</h5>
+        <img src="../images/media/detail-08.jpg" alt="Картинка">
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-3">
+        <h5>Фронтальное защитное ограждение</h5>
+        <img src="../images/media/detail-09.jpg" alt="Картинка">
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-3">
+        <h5>Угловое защитное ограждение</h5>
+        <img src="../images/media/detail-10.jpg" alt="Картинка">
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <h4>Крепление к полу</h4>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-4-10">
+        <p>К стойкам стеллажа крепятся опоры, которые непосредственно анкерятся в пол. Для дополнительного уменьшения точечной нагрузки от опор могут использоваться распределительные пластины.</p>
+
+        <p>Для устранения неровностей пола используются регулировочные металлические пластины различной толщины.</p>
+      </div><!-- end column -->
+      <div class="uk-width-medium-6-10">
+        <p style="text-align: center;">
+          <img src="../images/media/detail-11.jpg" alt="Картинка">
+        </p>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-4-10">
+        <h4>Соединитель спаренных рядов</h4>
+        <p>Межрамная связь стеллажной системы обеспечивается соединителями спаренных рядов, которые обуславливают дополнительную устойчивость и жесткость конструкции. </p>
+      </div><!-- end column -->
+      <div class="uk-width-medium-6-10">
+        <p style="text-align: center;">
+          <img src="../images/media/detail-12.jpg" alt="Картинка">
+        </p>
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <hr>
+
+    <div class="uk-grid">
+      <div class="uk-width-medium-1-2">
+        <p>На поверхность всех элементов конструкции стеллажной системы наносится полимерно-порошковое покрытие синего и оранжевого цвета (RAL 5019/RAL 2008).</p>
+
+        <p>Процесс нанесения покрытия осуществляется на современном оборудовании зарубежного производства, делая элементы более износостойкими.</p>
+      </div><!-- end column -->
+      <div class="uk-width-medium-1-2">
+        <div class="callback-panel">
+          <div class="uk-h4">Для оформления заказа или получения более детальной информации по конструкции стеллажа, размерам и цене, заполните <a href="">форму расчета стоимости</a> или </div>
+
+          <div class="callback-panel__phone">
+            <p>Позвоните по телефону:</p>
+            <a href="tel:+74955044078">+7 (495) 504-40-78</a>
+          </div>
+
+          <a class="callback-panel__order" href="">Закажите обратный звонок</a>
+        </div><!-- end callback-panel -->
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+  </div><!-- end container -->
+</section>
+
+
+
+  <!-- Футер -->
+  <footer class="footer">
+  <div class="uk-container">
+    <div class="uk-grid">
+      <div class="uk-width-small-1-2 uk-width-medium-4-12">
+        <div class="footer__column">
+          <div class="footer__title">Компания</div>
+
+          <ul class="footer__menu small">
+            <li><a href="">О компании</a></li>
+            <li><a href="">Производство</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Документация</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Публикации</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div><!-- end footer__column -->
+      </div><!-- end column -->
+      <div class="uk-width-small-1-2 uk-width-medium-5-12">
+        <div class="footer__column">
+          <div class="footer__title">Продукция</div>
+
+          <ul class="footer__menu">
+            <li><a href="">Фронтальные стеллажи</a></li>
+            <li><a href="">Глубинные стелажи</a></li>
+            <li><a href="">Полочные стеллажи</a></li>
+            <li><a href="">Мезонинные конструкции</a></li>
+            <li><a href="">Гравитационные стеллажи</a></li>
+            <li><a href="">Консольные стеллажи</a></li>
+          </ul>
+        </div><!-- end footer__column -->
+      </div><!-- end column -->
+      <div class="uk-width-medium-3-12">
+        <div class="footer__column">
+          <div class="footer__title">Контакты</div>
+          
+          <div class="footer__contacts">
+            <p><a href="tel:+74955044078">+7 495 504-40-78</a></p>
+            <p>109316, г. Москва, Волгоградский пр-т, д.47, офис 421</p>
+            <p>Пн—Пт с 9.00 до 18.00</p>
+            <p><a href="mailto:info@vekosystems.ru">info@vekosystems.ru</a></p>
+          </div>
+        </div><!-- end footer__column -->
+      </div><!-- end column -->
+    </div><!-- end grid -->
+
+    <div class="copyright">
+      <div class="uk-grid">
+        <div class="uk-width-medium-8-12 uk-width-large-9-12">
+          <p class="copyright__text">VekoSystems — залог эффективности вашего склада</p>
+
+          <p>Разработка и продвижение — <a class="ae-logo" href="">«ЭВРИКА»</a></p>
+        </div><!-- end column -->
+        <div class="uk-width-medium-4-12 uk-width-large-3-12 uk-hidden-small">
+          <form class="search-form" action="">
+            <div class="search-form__input">
+              <input type="text" placeholder="Поиск">
+              <button><span class="icon icon-loupe"></span></button>
+            </div>
+          </form>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end copyright -->
+  </div><!-- end container -->
+</footer>
+
+<!-- Расчет стоимости -->
+<div id="calcForm" class="uk-modal modal">
+  <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+    <a class="uk-modal-close close-btn">
+      <span class="icon icon-close"></span>
+    </a>
+    
+    <div class="modal__content">
+      <form class="form" action="">
+        <div class="uk-h2">Расчет стоимости</div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Ваше имя">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <input class="phoneInput" type="text" placeholder="Номер телефона">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <button class="btn yellow-btn" type="submit">Расчитать стоимость</button>
+          
+          <!-- После подключения удалить этот текст -->
+          <p>
+            <a href="#successMessage" data-uk-modal>Ссылка на успешную отправку</a>
+          </p>
+        </div><!-- end form-row -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Обратный звонок -->
+<div id="callBack" class="uk-modal modal">
+  <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+    <a class="uk-modal-close close-btn">
+      <span class="icon icon-close"></span>
+    </a>
+    
+    <div class="modal__content">
+      <form class="form" action="">
+        <div class="uk-h2">Заказать звонок</div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Ваше имя">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <input class="phoneInput" type="text" placeholder="Номер телефона">
+        </div><!-- end form-row -->
+
+        <div class="form-row">
+          <button class="btn yellow-btn" type="submit">Перезвоните</button>
+        </div><!-- end form-row -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Успешная отправка -->
+<div id="successMessage" class="uk-modal modal">
+  <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+    <a class="uk-modal-close close-btn">
+      <span class="icon icon-close"></span>
+    </a>
+    
+    <div class="modal__content">
+      <div class="success-message">
+        <div class="uk-h2">Спасибо!<br>Ваше сообщение отправлено</div>
+        <span class="icon icon-message"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Скрипты -->
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../libs/uikit/js/uikit.min.js" type="text/javascript"></script>
+<script src="../libs/uikit/js/components/lightbox.min.js" type="text/javascript"></script>
+<script src="../js/jquery.matchHeight-min.js" type="text/javascript"></script>
+<script src="../libs/slick/slick.min.js" type="text/javascript"></script>
+<script src="../js/ofi.min.js" type="text/javascript"></script>
+<script src="../js/jquery.sticky.js" type="text/javascript"></script>
+<script src="../js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="../js/script.js" type="text/javascript"></script>
+
+  <!-- Дополнительные скрипты для страниц -->
+  
+
+</body>
+</html>
