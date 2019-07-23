@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title></title>
+
+  <!-- include head -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:url" content="">
+<meta property="og:type" content="Article">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="../images/ui/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/ui/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="../images/ui/favicon.ico"> -->
+
+<link rel="stylesheet" href="../css/uikit.min.css">
+<link rel="stylesheet" href="../libs/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="../css/ion.rangeSlider.css">
+<link rel="stylesheet" href="../css/jquery.scrollbar.css">
+<link rel="stylesheet" href="../css/style.css">
+</head> 
+<body>  
+  <!-- Шапка -->
+  <header class="header">
+  <div class="uk-container">
+
+    <div class="header__top">
+      <div class="uk-grid uk-grid-medium uk-flex-middle" uk-grid uk-grid>
+        <div class="uk-width-2-3 uk-width-1-5@m">
+          <a class="logo" href="/">
+            <img src="../images/ui/logo-black.svg" alt="Logo">
+          </a>
+        </div><!-- end column -->
+        <div class="uk-width-1-3 uk-width-expand@m">
+          <div class="uk-text-right uk-hidden@m">
+            <a class="mbl-icon-btn" href="#mblTopMenu" uk-toggle="">
+              <span class="icon icon-menu"></span>
+            </a>
+          </div>
+
+          <div class="uk-flex uk-flex-middle uk-flex-between uk-visible@m">
+            <div class="gray-text semi-bold uk-visible@l">Режим работы магазина: 9:00 - 22:00</div>
+
+            <a class="gray-text semi-bold" href="mailto:info@auto88.ru">info@auto88.ru</a>
+
+            <ul class="horizontal-menu uk-flex uk-flex-middle">
+              <li><a href="">О компании</a></li>
+              <li><a href="">Сотрудничество</a></li>
+              <li><a href="">Статьи</a></li>
+              <li class="active"><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+            </ul>
+          </div><!-- end uk-flex -->
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end header__top -->
+
+
+    <div class="header__middle">
+      <div class="uk-grid uk-grid-medium" uk-grid>
+
+        <div class="uk-width-expand@m uk-flex-last@m">
+          <div class="uk-grid uk-flex-middle" uk-grid>
+
+            <div class="uk-width-2-3 uk-width-auto@m uk-flex-last@m">
+              <div class="phone-left-block">
+                <a class="header__phone" href="tel:+74955551515">+7 (495) 555-15-15</a>
+                <a class="header__callback-link" href="#callbackModal" uk-toggle>Заказать обратный звонок</a>
+              </div><!-- end phone-left-block -->
+            </div><!-- end column -->
+
+            <div class="uk-width-1-3 uk-width-auto@m uk-text-right uk-flex-last@m">
+              <a class="header__elem-icon" href="">
+                <span class="icon icon-compare"></span>
+              </a>
+
+              <a class="basket-elem" href="">
+                <span class="icon icon-basket"></span>
+                <span class="basket-elem__num">2</span>
+              </a>
+            </div><!-- end column -->
+
+            <div class="uk-width-expand@m">
+              <form class="search-block">
+                <div class="search-block__item">
+                  <div class="search-block__select">
+                    <select class="js__select-style">
+                      <option>Везде</option>
+                      <option>по артикулу</option>
+                      <option>по названию</option>
+                    </select>
+                  </div>
+
+                  <div class="search-block__field">
+                    <input class="search-block__input" type="search" placeholder="Введите название артикул или код товара">
+                    <button class="search-block__btn" type="submit"><span class="icon icon-loupe"></span></button>
+                  </div><!-- end search-block__input -->
+                </div><!-- end search-block__item -->
+              </form><!-- end search-block -->
+            </div><!-- end column -->
+          </div><!-- end grid -->
+        </div><!-- end column -->
+
+
+        <div class="uk-width-1-5@m">
+          <div class="nav-catalog">
+            <div class="nav-catalog__btn">Каталог товаров</div>
+
+            <div class="nav-catalog__collapse">
+              <ul class="nav-catalog__list">
+                <li class="nav-catalog__parent">
+                  <a href="">Автомасла</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Шины</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Шины легковые</a></li>
+                      <li><a href="">Диски штампованные и литые</a></li>
+                      <li><a href="">Шины грузовые</a></li>
+                      <li><a href="">Вентили, золотники и прочее</a></li>
+                      <li><a href="">Камеры</a></li>
+                      <li><a href="">Колпаки</a></li>
+                      <li><a href="">Грузики балансировочные</a></li>
+                      <li><a href="">Колпачки, эмблемы, наклейки</a></li>
+                      <li><a href="">Кольца проставочные</a></li>
+                      <li><a href="">Секретки, болты, гайки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent uk-active">
+                  <a href="">Активный пункт</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li class="uk-active"><a href="">Активный пункт</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Детские кресла</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Сигнализации</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Автолампы</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Акссесуары</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- end nav-catalog__collapse -->
+          </div><!-- end nav-catalog -->
+        </div><!-- end column -->
+
+      </div><!-- end grid -->
+    </div><!-- end header__middle -->
+  </div><!-- end container -->
+</header>
+
+<div id="mblTopMenu" uk-offcanvas="overlay: true;">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+    <ul class="uk-nav uk-nav-default">
+        <li class="uk-active"><a href="">О компании</a></li>
+        <li><a href="">Сотрудничество</a></li>
+        <li><a href="">Статьи</a></li>
+        <li><a href="">Оплата</a></li>
+        <li><a href="">Доставка</a></li>
+    </ul>
+
+    <ul class="uk-list">
+      <li>Режим работы магазина: <br> 9:00 - 22:00</li>
+      <li><a class="semi-bold" href="mailto:info@auto88.ru">info@auto88.ru</a></li>
+      <li><a class="semi-bold" href="tel:+74955551515">+7 (495) 555-15-15</a></li>
+    </ul>
+
+  </div>
+</div>
+  
+  
+
+
+  <footer class="footer uk-light">
+    <div class="uk-container">
+      <div class="footer-content">
+        <div class="uk-grid uk-grid-medium" uk-grid>
+          <div class="uk-width-1-3@m">
+            <div class="footer-title uk-h4">Каталог</div>
+
+            <ul class="footer-menu uk-column-1-2">
+              <li><a href="">Автомасла</a></li>
+              <li><a href="">Аккумуляторы</a></li>
+              <li><a href="">Автолампы</a></li>
+              <li><a href="">Шины</a></li>
+              <li><a href="">Детские кресла</a></li>
+              <li><a href="">Сигнализации</a></li>
+              <li><a href="">Аксессуары</a></li>
+            </ul>
+          </div><!-- end column -->
+
+          <div class="uk-width-2-3@s uk-width-expand@m">
+            <div class="footer__center-column">
+              <div class="uk-grid uk-grid-medium" uk-grid>
+                <div class="uk-width-1-2@s">
+                  <div class="footer-title uk-h4">Покупателю</div>
+
+                  <ul class="footer-menu">
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Как купить</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Доставка</a></li>
+                  </ul>
+                </div><!-- end column -->
+
+                <div class="uk-width-1-2@s">
+                  <div class="footer-title uk-h4">Наши контакты</div>
+
+                  <ul class="contacts-icon-list">
+                    <li>
+                      <span class="icon icon-phone"></span>
+
+                      <a href="tel:+74955551515"><strong>+7 (495) 555-15-15</strong></a>
+                    </li>
+                    <li>
+                      <span class="icon icon-clock"></span>
+
+                      <p>Режим работы: <br>
+                        9:00 - 22:00</p>
+                    </li>
+                    <li>
+                      <span class="icon icon-mail"></span>
+
+                      <a href="mailto:info@auto88.ru">info@auto88.ru</a>
+                    </li>
+                  </ul>
+                </div><!-- end column -->
+              </div><!-- end grid -->
+            </div><!-- end footer__center-column -->
+          </div><!-- end column -->
+
+          <div class="uk-width-1-3@s uk-width-auto@m">
+            <div class="footer__right-column">
+              <a class="footer-logo" href="/">
+                <img src="../images/ui/logo-white.svg" alt="Logo">
+              </a>
+
+              <a class="uk-button" href="#callbackModal" uk-toggle>Заказать звонок</a>
+            </div>
+          </div><!-- end column -->
+
+        </div><!-- end grid -->
+      </div><!-- end footer-content -->
+      
+      
+      <div class="copyright uk-text-center uk-text-left@s">
+        <div class="uk-grid" uk-grid>
+          <div class="uk-width-1-2@s">
+            <p>2019 © Автозапчасти 88</p>
+          </div>
+
+          <div class="uk-width-1-2@s uk-text-right@s">
+            <p>Разработано: <a href="https://nikilekt.ru/" target="_blank">Интернет-агенство "Nikilect"</a></p>
+          </div>
+        </div><!-- end grid -->
+      </div>
+    </div><!-- end container -->
+  </footer>
+
+
+  <!-- MODALS -->
+  <div class="uk-modal large-modal" id="callbackModal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <div class="uk-modal-title uk-h2 uk-text-center">Обратный звонок</div>
+
+      <div class="close-btn uk-modal-close" title="Закрыть"></div>
+
+      <form class="js__validate-form" action="">
+        <div class="uk-margin">
+          <label class="uk-form-label">Имя</label>
+
+          <div class="uk-form-controls">
+            <input class="uk-input" type="text">
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label">Телефон</label>
+
+          <div class="uk-form-controls">
+            <input class="uk-input js__phone-mask" type="tel" placeholder="+7(___) ___-____" required="">
+          </div>
+        </div>
+        
+        <div class="uk-margin-medium-top">
+          <button class="uk-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div><!-- end uk-modal-dialog -->
+  </div><!-- end modal -->
+
+  <div class="uk-modal large-modal" id="quickBuyModal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <div class="uk-modal-title uk-h2 uk-text-center">Купить в один клик</div>
+
+      <div class="close-btn uk-modal-close" title="Закрыть"></div>
+
+
+      <div class="modal-product">
+        <div class="uk-grid uk-grid-medium uk-flex-middle" uk-grid>
+          <div class="uk-width-1-3@s">
+            <a href="" class="img-center">
+              <img uk-img data-src="../images/media/product-01.jpg" alt="Название">
+            </a>
+          </div><!-- end column -->
+
+          <div class="uk-width-2-3@s">
+            <div class="modal-product__desc">
+              <a class="uk-h4" href="">Моторное масло Mobil Super 3000 X1 5W-40 3000 X1 5W-40</a>
+
+
+              <div class="modal-product__price-block">
+                <div class="price"><span>3 657</span> руб</div>
+                <div class="old-price">4100 руб</div>
+              </div>
+            </div><!-- end modal-product__desc -->
+          </div><!-- end column -->
+        </div><!-- end grid -->
+      </div><!-- end modal-product -->
+
+
+      <form class="uk-form-horizontal js__validate-form" action="">
+        <div class="uk-margin">
+          <label class="uk-form-label">Имя</label>
+
+          <div class="uk-form-controls">
+            <input class="uk-input" type="text">
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label">Телефон</label>
+
+          <div class="uk-form-controls">
+            <input class="uk-input js__phone-mask" type="tel" placeholder="+7(___) ___-____" required="">
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label">E-mail</label>
+
+          <div class="uk-form-controls">
+            <input class="uk-input" name="email" type="email" placeholder="mail@mail.ru" required="">
+          </div>
+        </div>
+        
+        <div class="uk-margin-medium-top uk-text-right@s">
+          <button class="uk-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div><!-- end uk-modal-dialog -->
+  </div><!-- end modal -->
+
+
+  <!-- Скрипты -->
+  <script src="../libs/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="../libs/uikit/dist/js/uikit.min.js" type="text/javascript"></script>
+<script src="../libs/jquery-nice-select/js/jquery.nice-select.min.js" type="text/javascript"></script>
+<script src="../libs/slick-carousel/slick/slick.min.js" type="text/javascript"></script>
+<script src="../libs/jquery.maskedinput/dist/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="../js/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/ion.rangeSlider.min.js" type="text/javascript"></script>
+<script src="../js/jquery.scrollbar.min.js" type="text/javascript"></script>
+<script src="../js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="../js/script.js" type="text/javascript"></script>
+
+  <!-- Дополнительные скрипты для страниц -->
+  
+
+</body>
+</html>
