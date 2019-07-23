@@ -1,0 +1,201 @@
+<!-- Подключаем базовый шаблон -->
+{% extends "base.html" %}
+
+<!-- Заголовок -->
+{% block title %}Каталог товаров{% endblock %}
+
+<!-- Контент страницы -->
+{% block content %}
+
+<div class="wrapper">
+  <div class="uk-container">
+    {% include "../include/breadcrumbs.html" %}
+    
+    <h1 class="page-title">Каталог товаров</h1>
+
+    
+    <ul class="category-row uk-grid uk-child-width-1-2@s" uk-grid="masonry: true">
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-autooil"></span>
+          </div>
+
+          <a href="" class="uk-h2">Автомасла</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Масло моторное</a></li>
+            <li><a href="">Масло трансмиссионное</a></li>
+            <li><a href="">Масло 2T, 4T</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-batteries"></span>
+          </div>
+
+          <a href="" class="uk-h2">Аккумуляторы</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Аккумуляторы легковые</a></li>
+            <li><a href="">Аккумуляторы для грузовых автомобилей</a></li>
+            <li><a href="">Аккумуляторы для мото</a></li>
+            <li><a href="">Ареометры</a></li>
+            <li><a href="">Провода для прикуривания АКБ</a></li>
+            <li><a href="">Провода и клеммы аккумуляторные</a></li>
+            <li><a href="">Прочее: АКБ</a></li>
+            <li><a href="">Пуско-зарядные устройства</a></li>
+            <li><a href="">Электролит и вода дистиллированная</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-car-lights"></span>
+          </div>
+
+          <a href="" class="uk-h2">Автолампы</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Авто и мото лампы</a></li>
+            <li><a href="">Бытовые лампы</a></li>
+            <li><a href="">Блоки поджига ксенон</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-tires"></span>
+          </div>
+
+          <a href="" class="uk-h2">Шины</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Шины легковые</a></li>
+            <li><a href="">Диски штампованные и литые</a></li>
+            <li><a href="">Шины грузовые</a></li>
+            <li><a href="">Вентили, золотники и прочее</a></li>
+            <li><a href="">Камеры</a></li>
+            <li><a href="">Колпаки</a></li>
+            <li><a href="">Грузики балансировочные</a></li>
+            <li><a href="">Колпачки, эмблемы, наклейки</a></li>
+            <li><a href="">Кольца проставочные</a></li>
+            <li><a href="">Секретки, болты, гайки</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-child-seats"></span>
+          </div>
+
+          <a href="" class="uk-h2">Детские кресла</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Смотреть все</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-alarms"></span>
+          </div>
+
+          <a href="" class="uk-h2">Сигнализации</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Категория 1</a></li>
+            <li><a href="">Категория 2</a></li>
+            <li><a href="">Категория 3</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+      <li>
+        <div class="category-block">
+          <div class="category-block__icon">
+            <span class="icon icon-accessories"></span>
+          </div>
+
+          <a href="" class="uk-h2">Аксессуары</a>
+
+          <ul class="category-block__links">
+            <li><a href="">Аксессуары водителя</a></li>
+            <li><a href="">Держатели и вешалки</a></li>
+            <li><a href="">Канистры, воронки и лейки</a></li>
+            <li><a href="">Парфюмерия</a></li>
+            <li><a href="">Пикник, туризм</a></li>
+            <li><a href="">Прочее: аксессуары</a></li>
+            <li><a href="">Средства личной гигиены</a></li>
+            <li><a href="">Термометры</a></li>
+            <li><a href="">Термосы и фляжки</a></li>
+            <li><a href="">Транспондеры</a></li>
+          </ul>
+        </div><!-- end category-block -->
+      </li>
+    </ul><!-- end grid -->
+
+
+
+
+
+  </div><!-- end container -->
+</div><!-- end wrapper -->
+
+
+<!-- related -->
+<section class="section gray-bg">
+  <div class="uk-container">
+    <div class="section-title uk-h2">Популярные товары</div>
+
+    <div class="product-row">
+      <div class="uk-grid uk-grid-match uk-grid-medium" uk-grid uk-height-match="target: .product__title">
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+      </div><!-- end grid -->
+    </div><!-- end product-row -->
+  </div><!-- end container -->
+</section>
+
+
+
+<section class="section">
+  <div class="uk-container">
+    <div class="seo-text-block">
+      <h2>Автозапчасти</h2>
+
+      <p>Московская фирма ООО «Авто88» была основана 27 августа 2018 года. Однако сформировалась наша команда гораздо раньше-2016 год. Наши сегодняшние позиции и взгляды определяются тем опытом, который мы получили и продолжаем получать. Оказывая услуги бизнесу в области автомобильной продукции и в то же время решая свои бизнес-задачи, мы имеем возможность отлично понимать проблемы клиентов. Это позволяет нам предлагать наиболее выгодные и перспективные товары в области автомобильной химии, запчастей и расходных материалов.</p>
+    </div>
+  </div><!-- end container -->
+</section>
+
+
+
+{% endblock %}
+
+<!-- Дополнительные скрипты -->
+{% block extraScripts %}{% endblock %}

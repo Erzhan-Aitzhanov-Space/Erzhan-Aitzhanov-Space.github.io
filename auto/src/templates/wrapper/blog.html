@@ -1,0 +1,107 @@
+<!-- Подключаем базовый шаблон -->
+{% extends "base.html" %}
+
+<!-- Заголовок -->
+{% block title %}Полезные материалы{% endblock %}
+
+<!-- Контент страницы -->
+{% block content %}
+
+<div class="wrapper">
+  <div class="uk-container">
+    {% include "../include/breadcrumbs.html" %}
+    
+    <h1 class="page-title">Полезные материалы</h1>
+
+    <div class="news-grid">
+      <ul class="links-list js__masonry-filter">
+        <li class="active"><span class="js__masonry-toggle" data-filter="*">Все <span class="filter-count"></span></span></li>
+        <li><span class="js__masonry-toggle" data-filter=".tag_articles">Статьи <span class="filter-count"></span></span></li>
+        <li><span class="js__masonry-toggle" data-filter=".tag_review">Обзоры <span class="filter-count"></span></span></li>
+        <li><span class="js__masonry-toggle" data-filter=".tag_tips">Советы <span class="filter-count"></span></span></li>
+      </ul>
+
+      <div class="masonry-grid" uk-scrollspy="target: .masonry-column; cls: uk-animation-scale-up; delay: 20">
+        <div class="grid-sizer"></div>
+
+        <div class="masonry-column tag_articles">
+          <a href="" class="news-item large red" uk-img data-src="../images/media/news-01.jpg">
+            <span class="news-item__more-link">Читать далее</span>
+
+            <div class="news-item__top-bar">
+              <div class="news-item__badge">Статьи</div>
+            </div>
+
+            <div class="news-item__title">Как поменять моторное масло?</div>
+            
+            <!-- ВНИМАНИЕ!!! Если текста нет, не выводить этот блок  .news-item__text -->
+            <div class="news-item__text">С помощью данной инструкции Вы сможете правильно поменять масло в двигателе своей машины – одной из самых ценных и дорогих вещей, которые у Вас есть.</div>
+          </a><!-- end news-item -->
+        </div><!-- end column -->
+
+        <div class="masonry-column tag_articles">
+          <a href="" class="news-item white" uk-img data-src="../images/media/news-02.jpg">
+            <span class="news-item__more-link">Читать далее</span>
+
+            <div class="news-item__top-bar">
+              <div class="news-item__badge">Статьи</div>
+            </div>
+
+            <div class="news-item__title">Как выбрать хороший масляный фильтр: 8 простых правил</div>
+            
+            <!-- ВНИМАНИЕ!!! Если текста нет, не выводить этот блок  .news-item__text -->
+            <div class="news-item__text">Масляный фильтр в автомобиле — что печень в организме. Незаметные на вид отклонения от нормы могут привести к огромным проблемам.</div>
+          </a><!-- end news-item -->
+        </div><!-- end column -->
+
+        <div class="masonry-column tag_review">
+          <a href="" class="news-item black" uk-img data-src="../images/media/news-03.jpg">
+            <span class="news-item__more-link">Читать далее</span>
+
+            <div class="news-item__top-bar">
+              <div class="news-item__badge">Обзор</div>
+            </div>
+
+            <div class="news-item__title">О дисках BBS</div>
+          </a><!-- end news-item -->
+        </div><!-- end column -->
+
+        <div class="masonry-column tag_review">
+          <a href="" class="news-item black" uk-img data-src="../images/media/news-03.jpg">
+            <span class="news-item__more-link">Читать далее</span>
+
+            <div class="news-item__top-bar">
+              <div class="news-item__badge">Обзор</div>
+            </div>
+
+            <div class="news-item__title">О дисках BBS</div>
+          </a><!-- end news-item -->
+        </div><!-- end column -->
+
+        <div class="masonry-column tag_tips">
+          <a href="" class="news-item white" uk-img data-src="../images/media/news-02.jpg">
+            <span class="news-item__more-link">Читать далее</span>
+
+            <div class="news-item__top-bar">
+              <div class="news-item__badge">Советы</div>
+            </div>
+
+            <div class="news-item__title">Как выбрать хороший масляный фильтр: 8 простых правил</div>
+            
+            <!-- ВНИМАНИЕ!!! Если текста нет, не выводить этот блок  .news-item__text -->
+            <div class="news-item__text">Масляный фильтр в автомобиле — что печень в организме. Незаметные на вид отклонения от нормы могут привести к огромным проблемам.</div>
+          </a><!-- end news-item -->
+        </div><!-- end column -->
+
+      </div><!-- end grid -->
+    </div><!-- end news-grid -->
+
+  </div><!-- end container -->
+</div><!-- end wrapper -->
+
+
+
+{% endblock %}
+
+<!-- Дополнительные скрипты -->
+{% block extraScripts %}{% endblock %}

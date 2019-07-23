@@ -1,0 +1,271 @@
+<!-- Подключаем базовый шаблон -->
+{% extends "base.html" %}
+
+<!-- Заголовок -->
+{% block title %}Корзина{% endblock %}
+
+<!-- Контент страницы -->
+{% block content %}
+
+<div class="wrapper">
+  <div class="uk-container">
+    {% include "../include/breadcrumbs.html" %}
+    
+    <h1 class="page-title">Корзина</h1>
+    
+    <div class="cart">
+      <div class="cart-head">
+        <div class="uk-grid uk-grid-small" uk-grid>
+          <div class="uk-width-1-2@m">
+            <div class="cart-head__title">Наименование</div>
+          </div><!-- end column -->
+
+          <div class="uk-width-expand@m">
+            <div class="cart-head__title">Цена за шт</div>
+          </div><!-- end column -->
+
+          <div class="uk-width-expand@m">
+            <div class="cart-head__title">Количество</div>
+          </div><!-- end column -->
+
+          <div class="uk-width-expand@m">
+            <div class="cart-head__title">Итого</div>
+          </div><!-- end column -->
+        </div><!-- end grid -->
+      </div><!-- end cart-head -->
+
+
+      <div class="cart-list">
+        <div class="cart-item">
+          <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+
+            <div class="uk-width-1-2@m">
+              <div class="cart-item__media">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="img-center">
+                      <img uk-img data-src="../images/media/product-01.jpg" alt="Название">
+                    </div>
+                  </div><!-- end column -->
+
+                  <div class="uk-width-expand">
+                    <div class="cart-item__title">Масло моторное Mobil Super 3000 Х1 5W40 синтетическое 1 л</div>
+                  </div><!-- end column -->
+                </div><!-- end grid -->
+              </div><!-- end cart-item__media -->
+            </div><!-- end column -->
+
+            <div class="uk-width-expand">
+              <div class="cart-item__price-block">
+                <div class="price">3 657 руб</div>
+                <div class="old-price">4100 руб</div>
+              </div>
+            </div><!-- end column -->
+
+            <div class="uk-width-auto uk-width-expand@s">
+              <div class="quantity-block">
+                <div class="quantity">
+                  <span class="quantity__btn minus">−</span>
+                  <div class="quantity__field">
+                    <input  class="quantity__input js__input-width" type="text" value="1">
+                  </div>
+                  <span class="quantity__btn plus">+</span>
+                </div>
+              </div>
+            </div><!-- end column -->
+
+            <div class="uk-width-expand@s">
+              <div class="cart-item__total-price">
+                <div class="price">3 657 руб</div>
+              </div>
+            </div><!-- end column -->
+          </div><!-- end grid -->
+
+          <div class="cart-item__delete" title="Удалить"><span class="icon icon-close"></span></div>
+        </div><!-- end cart-item -->
+
+
+        <div class="cart-item">
+          <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+
+            <div class="uk-width-1-2@m">
+              <div class="cart-item__media">
+                <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <div class="img-center">
+                      <img uk-img data-src="../images/media/product-01.jpg" alt="Название">
+                    </div>
+                  </div><!-- end column -->
+
+                  <div class="uk-width-expand">
+                    <div class="cart-item__title">Масло моторное Mobil Super 3000 Х1 5W40 синтетическое 1 л</div>
+                  </div><!-- end column -->
+                </div><!-- end grid -->
+              </div><!-- end cart-item__media -->
+            </div><!-- end column -->
+
+            <div class="uk-width-expand">
+              <div class="cart-item__price-block">
+                <div class="price">3 657 руб</div>
+                <div class="old-price">4100 руб</div>
+              </div>
+            </div><!-- end column -->
+
+            <div class="uk-width-auto uk-width-expand@s">
+              <div class="quantity-block">
+                <div class="quantity">
+                  <span class="quantity__btn minus">−</span>
+                  <div class="quantity__field">
+                    <input  class="quantity__input js__input-width" type="text" value="1">
+                  </div>
+                  <span class="quantity__btn plus">+</span>
+                </div>
+              </div>
+            </div><!-- end column -->
+
+            <div class="uk-width-expand@s">
+              <div class="cart-item__total-price">
+                <div class="price">3 657 руб</div>
+              </div>
+            </div><!-- end column -->
+          </div><!-- end grid -->
+
+          <div class="cart-item__delete" title="Удалить"><span class="icon icon-close"></span></div>
+        </div><!-- end cart-item -->
+      </div><!-- end cart-list -->
+
+      <div class="uk-grid" uk-grid>
+        <div class="uk-width-1-2@m">
+          <div class="promocode-elem">
+            <input class="promocode-elem__input" type="text" placeholder="Введите код купона для скидки">
+            <button class="promocode-elem__btn" type="submit"><span class="icon icon-arrow-right"></span></button>
+          </div>
+        </div><!-- end column -->
+
+        <div class="uk-width-1-2@m">
+          <div class="cart-total">
+            <div class="uk-grid" uk-grid>
+              <div class="uk-width-expand@m uk-text-right@m">
+                <div class="cart-total__num"><span>Итого:</span> 1 товар</div>
+              </div><!-- end column -->
+
+              <div class="uk-width-auto@m">
+                <div class="cart-total__price-block">
+                  <div class="price">3 657 руб</div>
+                  <div class="old-price">4100 руб</div>
+                  
+                  <div class="saving-elem">
+                    <div class="saving-elem__title">Экономия:</div>
+                    <div class="saving-elem__num">366 руб.</div>
+                  </div>
+                </div><!-- end cart-total__price-block -->
+              </div><!-- end column -->
+            </div><!-- end grid -->
+          </div><!-- end cart-total -->
+        </div><!-- end column -->
+
+      </div><!-- end grid -->
+    </div><!-- end cart -->
+
+    <div class="order">
+      <div class="uk-h2">Оформление заказа</div>
+
+      <div class="uk-grid" uk-grid>
+        <div class="uk-width-3-5@s uk-width-1-2@m">
+          <form class="uk-form-horizontal js__validate-form">
+            <div class="uk-margin">
+              <label class="uk-form-label">Имя</label>
+
+              <div class="uk-form-controls">
+                <input class="uk-input" type="text">
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <label class="uk-form-label">E-mail</label>
+
+              <div class="uk-form-controls">
+                <input class="uk-input" name="email" type="email" placeholder="mail@mail.ru">
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <label class="uk-form-label">Телефон</label>
+
+              <div class="uk-form-controls">
+                <input class="uk-input js__phone-mask" type="tel" placeholder="+7(___) ___-____" required="">
+              </div>
+            </div>
+
+            <div class="uk-margin">
+              <label class="uk-form-label">Адрес</label>
+
+              <div class="uk-form-controls">
+                <input class="uk-input" type="text">
+              </div>
+            </div>
+
+            <div class="uk-grid" uk-grid>
+              <div class="uk-width-1-2@m">
+                <label class="check-elem personal-check">
+                  <input class="uk-checkbox" type="checkbox" name="checkbox1">
+                  Я согласен на обработку персональных данных
+                </label>
+              </div><!-- end column -->
+
+              <div class="uk-width-1-2@m">
+                <button class="uk-button" type="submit">Оформить заказ</button>
+              </div><!-- end column -->
+            </div><!-- end grid -->
+        </form>
+        </div><!-- end column -->
+
+        <div class="uk-width-2-5@s uk-width-1-2@m">
+          <p>Для оформления заказа, заполните форму. После поступления заявки наш менеджер свяжеться с Вами и обговорит детали заказа:  Выбирет удобное время доставки и удобный способ оплаты. Проконсультирует в случае необходимости. </p>
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end order -->
+
+  </div><!-- end container -->
+</div><!-- end wrapper -->
+
+
+<!-- related -->
+<section class="section gray-bg">
+  <div class="uk-container">
+    <div class="section-title uk-h2">Сопутствующие товары</div>
+
+    <div class="product-row">
+      <div class="uk-grid uk-grid-match uk-grid-medium" uk-grid uk-height-match="target: .product__title">
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+        <div class="uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
+          {% include "../include/product.html" %}
+        </div><!-- end column -->
+
+      </div><!-- end grid -->
+    </div><!-- end product-row -->
+  </div><!-- end container -->
+</section>
+
+
+
+{% endblock %}
+
+<!-- Дополнительные скрипты -->
+{% block extraScripts %}{% endblock %}

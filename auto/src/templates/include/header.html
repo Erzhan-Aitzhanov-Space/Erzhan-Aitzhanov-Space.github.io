@@ -1,0 +1,201 @@
+<header class="header">
+  <div class="uk-container">
+
+    <div class="header__top">
+      <div class="uk-grid uk-grid-medium uk-flex-middle" uk-grid uk-grid>
+        <div class="uk-width-2-3 uk-width-1-5@m">
+          <a class="logo" href="/">
+            <img src="../images/ui/logo-black.svg" alt="Logo">
+          </a>
+        </div><!-- end column -->
+        <div class="uk-width-1-3 uk-width-expand@m">
+          <div class="uk-text-right uk-hidden@m">
+            <a class="mbl-icon-btn" href="#mblTopMenu" uk-toggle="">
+              <span class="icon icon-menu"></span>
+            </a>
+          </div>
+
+          <div class="uk-flex uk-flex-middle uk-flex-between uk-visible@m">
+            <div class="gray-text semi-bold uk-visible@l">Режим работы магазина: 9:00 - 22:00</div>
+
+            <a class="gray-text semi-bold" href="mailto:info@auto88.ru">info@auto88.ru</a>
+
+            <ul class="horizontal-menu uk-flex uk-flex-middle">
+              <li><a href="">О компании</a></li>
+              <li><a href="">Сотрудничество</a></li>
+              <li><a href="">Статьи</a></li>
+              <li class="active"><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+            </ul>
+          </div><!-- end uk-flex -->
+        </div><!-- end column -->
+      </div><!-- end grid -->
+    </div><!-- end header__top -->
+
+
+    <div class="header__middle">
+      <div class="uk-grid uk-grid-medium" uk-grid>
+
+        <div class="uk-width-expand@m uk-flex-last@m">
+          <div class="uk-grid uk-flex-middle" uk-grid>
+
+            <div class="uk-width-2-3 uk-width-auto@m uk-flex-last@m">
+              <div class="phone-left-block">
+                <a class="header__phone" href="tel:+74955551515">+7 (495) 555-15-15</a>
+                <a class="header__callback-link" href="#callbackModal" uk-toggle>Заказать обратный звонок</a>
+              </div><!-- end phone-left-block -->
+            </div><!-- end column -->
+
+            <div class="uk-width-1-3 uk-width-auto@m uk-text-right uk-flex-last@m">
+              <a class="header__elem-icon" href="">
+                <span class="icon icon-compare"></span>
+              </a>
+
+              <a class="basket-elem" href="">
+                <span class="icon icon-basket"></span>
+                <span class="basket-elem__num">2</span>
+              </a>
+            </div><!-- end column -->
+
+            <div class="uk-width-expand@m">
+              <form class="search-block">
+                <div class="search-block__item">
+                  <div class="search-block__select">
+                    <select class="js__select-style">
+                      <option>Везде</option>
+                      <option>по артикулу</option>
+                      <option>по названию</option>
+                    </select>
+                  </div>
+
+                  <div class="search-block__field">
+                    <input class="search-block__input" type="search" placeholder="Введите название артикул или код товара">
+                    <button class="search-block__btn" type="submit"><span class="icon icon-loupe"></span></button>
+                  </div><!-- end search-block__input -->
+                </div><!-- end search-block__item -->
+              </form><!-- end search-block -->
+            </div><!-- end column -->
+          </div><!-- end grid -->
+        </div><!-- end column -->
+
+
+        <div class="uk-width-1-5@m">
+          <div class="nav-catalog">
+            <div class="nav-catalog__btn">Каталог товаров</div>
+
+            <div class="nav-catalog__collapse">
+              <ul class="nav-catalog__list">
+                <li class="nav-catalog__parent">
+                  <a href="">Автомасла</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Шины</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Шины легковые</a></li>
+                      <li><a href="">Диски штампованные и литые</a></li>
+                      <li><a href="">Шины грузовые</a></li>
+                      <li><a href="">Вентили, золотники и прочее</a></li>
+                      <li><a href="">Камеры</a></li>
+                      <li><a href="">Колпаки</a></li>
+                      <li><a href="">Грузики балансировочные</a></li>
+                      <li><a href="">Колпачки, эмблемы, наклейки</a></li>
+                      <li><a href="">Кольца проставочные</a></li>
+                      <li><a href="">Секретки, болты, гайки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent uk-active">
+                  <a href="">Активный пункт</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li class="uk-active"><a href="">Активный пункт</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Детские кресла</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Сигнализации</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Автолампы</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-catalog__parent">
+                  <a href="">Акссесуары</a>
+
+                  <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; pos: right-top;delay-hide: 300;toggle: - *;">
+                    <ul class="nav-catalog__subnav">
+                      <li><a href="">Масло моторное</a></li>
+                      <li><a href="">Масло трансмиссионное</a></li>
+                      <li><a href="">Масло 2T, 4T</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- end nav-catalog__collapse -->
+          </div><!-- end nav-catalog -->
+        </div><!-- end column -->
+
+      </div><!-- end grid -->
+    </div><!-- end header__middle -->
+  </div><!-- end container -->
+</header>
+
+<div id="mblTopMenu" uk-offcanvas="overlay: true;">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+    <ul class="uk-nav uk-nav-default">
+        <li class="uk-active"><a href="">О компании</a></li>
+        <li><a href="">Сотрудничество</a></li>
+        <li><a href="">Статьи</a></li>
+        <li><a href="">Оплата</a></li>
+        <li><a href="">Доставка</a></li>
+    </ul>
+
+    <ul class="uk-list">
+      <li>Режим работы магазина: <br> 9:00 - 22:00</li>
+      <li><a class="semi-bold" href="mailto:info@auto88.ru">info@auto88.ru</a></li>
+      <li><a class="semi-bold" href="tel:+74955551515">+7 (495) 555-15-15</a></li>
+    </ul>
+
+  </div>
+</div>
